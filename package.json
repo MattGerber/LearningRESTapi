@@ -1,8 +1,8 @@
 {
-  "name": "LearningRESTapi",
+  "name": "learningrestapi",
   "version": "1.0.0",
   "description": "Starting to learn how to implement and use a REST api",
-  "main": "hello.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/MattGerber/LearningRESTapi#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "mongodb": "^3.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
   }
 }
