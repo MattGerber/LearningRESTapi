@@ -1,0 +1,24 @@
+{
+  "name": "LearningRESTapi",
+  "version": "1.0.0",
+  "description": "Starting to learn how to implement and use a REST api",
+  "main": "hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattGerber/LearningRESTapi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattGerber/LearningRESTapi/issues"
+  },
+  "homepage": "https://github.com/MattGerber/LearningRESTapi#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.3.5"
+  }
+}
