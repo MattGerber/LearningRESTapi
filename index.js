@@ -30,19 +30,21 @@ app.use(bodyParser.urlencoded({
 
 
 //mongodb connection
-// mongoose.connect('mongodb://localhost/ninjago');
-// mongoose.Promise = global.Promise;
+// mongoose.connect('URI = "mongodb+srv://Admin:Matcha123@cluster0-lrkkj.mongodb.net/test?retryWrites=true&w=majority"');
+mongoose.Promise = global.Promise;
+
+app.use(express.static('public'))
 
 
 //initialize routes
 app.use('/api', require('./routes/api'));
 
 //err handeling
-app.use(function(ree, req, res, next){
-	// console.log(err);
-	res.status(422).send({
-		error: err.message
-	});
+app.use(function(err, res, req, next){
+	console.log(err);
+	// res.status(422).send({
+	// 	error: err.message
+	// });
 });
 
 // start request listening
